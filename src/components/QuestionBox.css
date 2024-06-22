@@ -1,0 +1,153 @@
+.main_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    transition: background-color 0.5s ease;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.light .background {
+    background-image: url('../assets/image....jpeg'); 
+}
+
+.dark .background {
+    background-color: darkgray;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.header img {
+    width: 80px;
+    margin-right: 10px;
+}
+
+.heading {
+    font-size: 2em;
+    margin: 0;
+}
+
+.toggle-mode {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 3;
+}
+
+.toggle-mode button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.toggle-mode button.light {
+    background-color: lightgrey;
+    color: black;
+}
+
+.toggle-mode button.dark {
+    background-color: white;
+    color: black;
+}
+
+.toggle-mode button:hover {
+    background-color: #ddd;
+}
+
+.question-section {
+    background-color: rgba(100, 100, 100, 0.9); 
+    padding: 45px; 
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 80%; 
+    margin-top: 80px;
+    position: relative;
+    z-index: 1;
+    text-align: left;
+}
+
+.question-section h3 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.2em;
+    color: black; 
+}
+
+.question-text {
+    font-size: 2.5em; 
+    margin-bottom: 20px;
+    color: white; 
+    text-align: center;
+}
+
+.highlight {
+    color: red;
+}
+
+.options-container button {
+    display: block;
+    margin: 15px auto;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: lightgrey;
+    transition: background-color 0.3s ease;
+    width: 80%;
+}
+
+.options-container button:hover {
+    background-color: #ddd;
+}
+
+.highlight-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.highlight-buttons button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin: 0 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color:beige;
+    transition: background-color 0.3s ease;
+}
+
+.highlight-buttons button:hover {
+    background-color: #ddd;
+}
+
+
